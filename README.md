@@ -1,7 +1,6 @@
 # Maoluimhreacha
-This Prolog script generates numbers 0 - 1000 in the disjunctive number system in Irish 
-
-The script produces numbers 0-1000 in a principled way. You can ask Prolog to print them all by typing:
+This Prolog script generates numbers 0 - 1000 in the disjunctive number system in Irish in a principled way. 
+You can ask Prolog to print them all by typing:
 
 irish(A,_,B,[number,disjunctive,_]).
 
