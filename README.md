@@ -29,7 +29,9 @@ irish(A,_,B,[number,disjunctive,thousands]). to see 1000.
 Maoluimhreacha concatenation is, in large part, principled. There are how- ever, some irregular forms. Carrying those irregulars into the concatenations of bigger integers took some additional predicate definitions. Here are some examples:
 
 • 10 and 12 are irregular compared to the rest of the -teens in Irish, so I hard-coded them.
+
 • Irish has three words that all mean ‘-hundred’. One word, c ́ead, is only used with one-hundred. Ch ́ead is used with two- through six-hundred. Gc ́ead is used with seven- through nine-hundred. Accordingly, I needed to code three different predicates for -hundreds numbers.
+
 • The words for ‘two’, ‘three’ or ‘four’, etc. when used to say ‘two-hundred’, etc. are general conjunctive numbers, not disjunctive. In this way, we’re describing ‘how many hundreds’ there are. Thus, I needed to include bunuimhreacha numbers two through nine in my script.
 
 Aside from these logistical considerations, I had a bit of a difficult time finding confidence-inspiring resources online to fact-check my work. I’ve been learning on Duolingo, but they don’t provide a complete chart of all the numbers. I consulted Google translate, but as anyone who has tried to use it while traveling may have found out, it isn’t always terribly nuanced and accurate—even when translating between very widely spoken languages like English and Spanish. I tried my best to recreate the number system in an accurate and principled manner, but it is perhaps possible that there are some irregular forms I missed.
