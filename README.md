@@ -1,6 +1,31 @@
 # Maoluimhreacha
+## Table of Contents
+* [General Info](#general-info)
+* [Technologies](#technologies)
+* [Prolog Installation](#prolog-installation)
+* [Usage](#usage)
+* [Notes](#notes)
+
+## General Info
 This Prolog script generates numbers 0 - 1000 in the disjunctive number system in Irish in a principled way. 
-You can ask Prolog to print them all by typing:
+
+## Technologies
+[Prolog](https://en.wikipedia.org/wiki/Prolog) is a declarative programming language with roots in formal logic first developed in 1972 for artificial intelligence applications. I use the open-source [swi-prolog](https://www.swi-prolog.org/) release.
+
+## Prolog Installation
+If you're on macOS, make sure you have Homebrew installed:
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Then install SWI-Prolog:
+```
+$ brew install swi-prolog
+```
+Otherwise, check out [SWI-Prolog's Downloads page](https://www.swi-prolog.org/Download.html).
+
+## Usage
+You can ask Prolog to print all the numbers by typing:
 
 irish(A,\_,B,[number,disjunctive,_]).
 
@@ -25,6 +50,8 @@ irish(A,_,B,[number,disjunctive,three_digits]). for the remaining num- bers 101 
 Prolog will print each hundred with its units first, then each hundred with its teens, then each hundred with its multiples of ten, and then all the rest.
 
 irish(A,_,B,[number,disjunctive,thousands]). to see 1000.
+
+## Notes
 
 Maoluimhreacha concatenation is, in large part, principled. There are how- ever, some irregular forms. Carrying those irregulars into the concatenations of bigger integers took some additional predicate definitions. Here are some examples:
 
