@@ -7,7 +7,17 @@
 * [Notes](#notes)
 
 ## General Info
-This Prolog script generates numbers 0 - 1000 in the disjunctive number system in Irish in a principled way. 
+This Prolog script generates numbers 0 - 1000 in the disjunctive number system in Irish in a principled way. They are used when the number is not immediately followed by a noun, such as:
+
+* counting ("one, two, three")
+* arithmetic ("two plus two is four")
+* telling time ("it is a quarter to five")
+* phone numbers ("call me at 555-1234")
+* after nouns ("bus 13", "channel 6")
+
+Irish also has two other number systems: bunuimhreacha (general conjunctive, used before a noun to count the amount of things present) and uimhreacha pearsanta (human conjunctive, used to count people from two up to 12).
+
+Source: [Duolingo Irish](https://www.duolingo.com/).
 
 ## Technologies
 [Prolog](https://en.wikipedia.org/wiki/Prolog) is a declarative programming language with roots in formal logic first developed in 1972 for artificial intelligence applications. I use the open-source [swi-prolog](https://www.swi-prolog.org/) release.
@@ -15,7 +25,7 @@ This Prolog script generates numbers 0 - 1000 in the disjunctive number system i
 ## Prolog Installation
 If you're on macOS, make sure you have Homebrew installed:
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Then install SWI-Prolog:
