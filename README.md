@@ -36,30 +36,46 @@ Otherwise, check out [SWI-Prolog's Downloads page](https://www.swi-prolog.org/Do
 
 ## Usage
 You can ask Prolog to print all the numbers by typing:
-
+```
 irish(A,\_,B,[number,disjunctive,_]).
-
+```
 It will print the Irish word(s), A, followed by the corresponding integer, B. They’ll print, more or less, in ascending order due to how I organized the script. It may be advisable to query for smaller, more manageable sets:
-
-irish(A,\_,B,[number,disjunctive,zero]). to see zero.
-
-irish(A,_,B,[number,disjunctive,ones]). to see numbers one through nine.
-
-irish(A,_,B,[number,disjunctive,teens]). to see numbers ten through nineteen. 
+```
+irish(A,\_,B,[number,disjunctive,zero]).
+``` 
+to see zero,
+```
+irish(A,_,B,[number,disjunctive,ones]). 
+```
+to see numbers one through nine,
+```
+irish(A,_,B,[number,disjunctive,teens]). 
+```
+to see numbers ten through nineteen. 
 
 Ten is included in this set for ease of programming later on. It behaves like the other -teen numbers in regards to use of the prefix ‘a’ that Irish employs for counting numbers. Ten and twelve will print first because they are both irregular forms and as such require their own predicates.
-
-irish(A,_,B,[number,disjunctive,tens]). to see multiples of 10 between 20 and 90.
-
-irish(A,_,B,[number,disjunctive,two_digits]). for numbers 21 through 99, excepting those that are equivalent to 0 modulo 10, as they belong to the previous set.
-
-irish(A,_,B,[number,disjunctive,hundreds]). for multiples of 100 less than 1000.
-
-irish(A,_,B,[number,disjunctive,three_digits]). for the remaining num- bers 101 through 999. 
+```
+irish(A,_,B,[number,disjunctive,tens]). 
+```
+to see multiples of 10 between 20 and 90.
+```
+irish(A,_,B,[number,disjunctive,two_digits]). 
+```
+for numbers 21 through 99, excepting those that are equivalent to 0 modulo 10, as they belong to the previous set.
+```
+irish(A,_,B,[number,disjunctive,hundreds]). 
+```
+for multiples of 100 less than 1000.
+```
+irish(A,_,B,[number,disjunctive,three_digits]). 
+```
+for the remaining num- bers 101 through 999. 
 
 Prolog will print each hundred with its units first, then each hundred with its teens, then each hundred with its multiples of ten, and then all the rest.
-
-irish(A,_,B,[number,disjunctive,thousands]). to see 1000.
+```
+irish(A,_,B,[number,disjunctive,thousands]). 
+```
+to see 1000.
 
 ## Notes
 
