@@ -45,7 +45,7 @@ You can ask Prolog to print all the numbers by typing:
 ```
 irish(A,_,B,[number,disjunctive,_]).
 ```
-It will print the Irish word(s), A, followed by the corresponding integer, B. They’ll print, more or less, in ascending order due to how I organized the script. It may be advisable to query for smaller, more manageable sets. For example, to see zero:
+It will print the Irish word(s), A, followed by the corresponding integer, B. They’ll print, more or less, in ascending order due to how I organized the script. Note that you must press the ```Spacebar``` after each output to keep getting them all, pressing ```Enter``` will prompt you for a new command. It may be advisable to query for smaller, more manageable sets. For example, to see zero:
 ```
 irish(A,_,B,[number,disjunctive,zero]).
 ``` 
@@ -53,8 +53,6 @@ to see numbers one through nine:
 ```
 irish(A,_,B,[number,disjunctive,ones]). 
 ```
-Note that you must press the ```spacebar``` after each output to keep getting them all, pressing ```Enter``` will prompt you for a new command.
-
 Numbers ten through nineteen:
 ```
 irish(A,_,B,[number,disjunctive,teens]). 
